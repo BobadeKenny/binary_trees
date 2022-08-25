@@ -38,7 +38,8 @@ int is_perfect(const binary_tree_t *tree, int depth, int level)
 	{
 		return (0);
 	}
-	return (is_perfect(tree->left, depth, level + 1) && is_perfect(tree->right, depth, level + 1));
+	return (is_perfect(tree->left, depth, level + 1) &&
+	is_perfect(tree->right, depth, level + 1));
 }
 
 /**
